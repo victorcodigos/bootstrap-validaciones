@@ -15,7 +15,7 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,29 +37,31 @@
     </nav>
 
 
-    <h1>Formulario con Bootstrap</h1>
+    <h1><i>Formulario con Bootstrap </i></h1>
 
-    <h4>Crea tu usuario</h4>
+    <h6>Crea tu usuario : </h6>
 
 
     <form id="myForm">
         <div class="mb-3">
-            <label for="InputName" class="form-label">Nombre</label>
+           <strong> <label for="InputName" class="form-label">Nombre</label></strong>
             <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre aqui">
         </div>
         <div class="mb-3">
-            <label for="InputEmail" class="form-label">Correo electrónico</label>
+             <strong><label for="InputEmail" class="form-label">Correo electrónico</label></strong>
             <input type="email" class="form-control" id="email" placeholder="name@example.com">
         </div>
         <div class="mb-3">
-            <label for="InputPassword1" class="form-label">Ingresa tu password</label>
-            <input type="password" class="form-control" id="passwordUno" placeholder="Escribe tu password">
-            <input type="password" class="form-control" id="passwordDos" placeholder="Repite tu password">
+            <strong><label for="InputPassword1" class="form-label">Ingresa tu contraseña</label></strong>
+            <input type="password" class="form-control" id="passwordUno" placeholder="Escribe tu contraseña">
+            <input type="password" class="form-control" id="passwordDos" placeholder="Repite tu contraseña">
         </div>
  
 
-        <input type="submit" id="btn" value="Enviar">
-        <input type="button" id="btnBorrar" value="Borrar">
+       <div><input type="submit" id="btn" value="Enviar"> </div>
+       <div><input type="submit" id="borrando" value="Borrar"/> </div>
+
+<p id="parrafo"></p>
 
     </form>
 
@@ -68,6 +70,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+        <br> <strong><footer> Formulario creado por Yolanda y Victor. Todos los derechos reservados. Copyright © 2023</footer></strong></br>
 </body>
 
 </html>

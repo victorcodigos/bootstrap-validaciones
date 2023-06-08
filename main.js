@@ -3,8 +3,9 @@ const inputEmail = document.querySelector("#email");
 const inputPassUno = document.querySelector("#passwordUno");
 const inputPassDos = document.querySelector("#passwordDos");
 const inputBtn = document.querySelector("#btn");
+const borrar = document.querySelector("#borrando");
 
-console.log(inputPassUno)
+
 
 
 function onSubmit(e) {
@@ -21,7 +22,7 @@ function onSubmit(e) {
     const user = {
       nombre, //si la key y la value se llaman igual solo se pone una
       correo: emailValue,
-      password: inputPassUnoValue,
+      passwordUno: inputPassUnoValue,
       passwordDos: inputPassDosValue,
 
     };
@@ -30,6 +31,31 @@ function onSubmit(e) {
     console.log(user)
 
 }
+// funcion para borrar todo el local storage con el boton borrar todos local
+
+ function clearLocal() {localStorage.clear()};
 
 
-inputBtn.addEventListener("click", onSubmit);
+ inputBtn.addEventListener("click", onSubmit);
+
+ // validar datos 
+ 
+ let datos = {};
+
+ function validarDatos(e) {
+    e.preventDefault();
+    datos= {
+      nombre:inputNombre.value,
+      email:inputEmail.value,
+      passwordUno:inputPassUno.value,
+      passwordDos:inputPassDos.value,
+    }
+
+ };
+
+ if (
+    inputNombre.value !== "" ||
+    inputEmail.value !== "" ||
+    inputPassUno.value !== "" ||
+    inputPassDos.value !== "" )
+{ datos.innerHTML = "Poner todos los campos"};
