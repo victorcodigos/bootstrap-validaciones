@@ -68,6 +68,10 @@ Bootstrap 5 es una de las versiones recientemente lanzadas del Framework Bootstr
 - Extensible. ...
 - Personalización.
 
+## Enlace para la presentacion
+
+[Click aqui](https://github.com/victorcodigos/bootstrap-validaciones/blob/main/assets/Investigacion.txt)
+
 ## Proyecto 
 
 🔗
