@@ -42,6 +42,29 @@ El Framework Bootstrap permite que los desarrolladores web ahorren tiempo gracia
 
 ```
 
+--
+
+## ¿Cuál es la función de Bootstrap 5?
+
+
+Bootstrap 5 es una de las versiones recientemente lanzadas del Framework Bootstrap para el desarrollo web. Esta es una de las librerías más conocidas, pues se pueden construir aplicaciones web adaptables para móvil con el CDN de open source jsDelivr y una página con una plantilla de inicio.
+
+--
+
+## ¿Cuáles son las ventajas de usar Bootstrap?
+
+- 7 Ventajas de usar Bootstrap en tu web
+- Uso fácil. Antes de nada, cabe destacar la facilidad de uso de - Bootstrap. ...
+- Compatible con distintos navegadores. ...
+- Diseño Responsive. ...
+- Comunidad web. ...
+- Desarrollo rápido. ...
+- Extensible. ...
+- Personalización.
+
+
+
+
 
 
 
