@@ -1,3 +1,4 @@
+// selectores
 const inputNombre = document.querySelector("#name");
 const inputEmail = document.querySelector("#email");
 const inputPassUno = document.querySelector("#passwordUno");
@@ -6,7 +7,10 @@ const inputBtn = document.querySelector("#btn");
 const borrar = document.querySelector("#borrando");
 const password = document.querySelector("#password");
 const email = document.querySelector("#email");
-const parrafo = document.querySelector(".parrafo")
+const parrafo = document.querySelector(".parrafo");
+
+
+// function para implementar los datos
 
 function onSubmit(e) {
   e.preventDefault();
@@ -52,22 +56,23 @@ function verify() {
   // requires Email validator that adheres directly to the specification for email address naming
   // Matches	asmith@mactec.com | foo12@foo.edu | bob.smith@foo.tv
 
+  // llamando la function verify
 
   if (inputNombre.value === '' || inputEmail.value === '' || inputPassUno.value === '' || inputPassDos.value === '') {
-    console.log("error campos vacios")
-    msg.innerHTML = `<p class= "p-error" >"Please enter all fields"</p> `;
+
+    msg.innerHTML = `<p class= "p-error" >"Please enter all fields!"</p> `;
   }
   else if (email.test(inputEmail.value) !== true) {
-    msg.innerHTML = `<p class= "p-error" >Please enter a valid email</p> `;
+    msg.innerHTML = `<p class= "p-error" >Please enter a valid email!</p> `;
   }
   else if (password.test(inputPassUno.value) !== true) {
-    msg.innerHTML = `<p class= "p-error">"Please enter a valid password"</p>`;
+    msg.innerHTML = `<p class= "p-error">"Please enter a valid password!"</p>`;
   }
-  else if (password.test(inputPassUno.value !== inputPassDos.value) !== true) {
-    msg.innerHTML = `<p class= "p-error">"It must be the same password"</p>`;
+  else if (password.test(inputPassUno.value === inputPassDos.value)) {
+    msg.innerHTML = `<p class= "p-error">"It must be the same password!"</p>`;
   }
   else {
-    msg.innerHTML = `<p class= "p-success">"Usuario creado correctamente"</p>`;
+    msg.innerHTML = `<p class= "p-success">"Usuario creado correctamente!"</p>`;
   }
-  setTimeout(() => { msg.innerHTML = ""; }, 5000);
+  setTimeout(() => { msg.innerHTML = ""; }, 6000);
 }
