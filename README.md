@@ -10,6 +10,12 @@
 
 El proyecto con **Bootstrap** fue muy útil, la intención es poner todo lo que estamos aprendiendo en **practica.**
 
+# 🖊️ Que es lo que hace ese proyecto? 
+
+El proyecto es un formulário que guarda los datos en el local Storage cuando el user rellena y le envia.
+Despues te redirecciona a la pagina Usuario donde hay un buton que se llama mostrar y al hacer click nos muestra
+las tarjetas de los usuarios.
+
 # 🤓 Por que usar el Bootsttap:
 
 El Framework Bootstrap permite que los desarrolladores web ahorren tiempo gracias a que
